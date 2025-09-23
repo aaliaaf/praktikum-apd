@@ -1,0 +1,32 @@
+print('\n--- TIKET KOLAM RENANG BERDASARKAN USIA ---')
+
+#HARGA TIKET
+harga_anak = 15000
+harga_remaja = 30000
+harga_dewasa = 50000
+
+#KATEGORI TIKET
+kategori = "anak"
+kategori = "remaja" 
+kategori = "dewasa"
+
+#INPUT USIA YANG DIGUNAKAN
+usia = int(input("Masukkan usia :"))
+if usia>20:
+    print("\n--- KATEGORI TIKET ---")
+    print('Tiket Dewasa - 50000')
+elif usia>=11 and usia<=19:
+    usia = int(input("Masukkan usia :"))
+    if usia>=11 and usia<19:
+       print("\n--- KATEGORI TIKET ---")
+       for i in range (2):
+        print(f'Tiket Remaja - 30000')
+
+else:
+    usia = int(input("Masukkan usia :"))
+    print("\n--- KATEGORI TIKET ---")
+    for i in range(2):
+        print(f'Tiket Anak - 15000')
+
+
+
