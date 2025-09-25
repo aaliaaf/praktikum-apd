@@ -37,10 +37,19 @@
 
 tinggi = int(input("masukkan tinggi ="))
 
-if tinggi < 145:
+if tinggi <=145:
     print("tidak boleh naik")
 else:
     print("boleh naik")
 
 status = "boleh naik" if tinggi >=145 else "tidak boleh naik"
 print(status)
+
+print("menu 1 = kubus")
+print("menu 2 = tabung")
+print("menu 3 = balok")
+menu = int(input("masukkan menu :"))
+
+if menu == 1:
+    print('menghitung volume kubus')
+    
