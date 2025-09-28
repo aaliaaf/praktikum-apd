@@ -1,5 +1,7 @@
 #Menu
-menu = str('SilverQueen, DairyMilk, Kinderjoy') 
+menu = 'SilverQueen'
+menu = 'DairyMilk'
+menu = 'Kinderjoy'
 
 #Harga menu
 hargaSilverQueen = 25000
@@ -20,7 +22,7 @@ if member == 'punya':
     print('Status :', status)
 
     if status == 'Login member berhasil!':
-        print('\n=== Selamat Datang Di Toko Guro ===')
+        print('\n=== Selamat Datang Di Toko Guro Selamat Berbelanja ===')
         print("-" * 61)
         print(f"|{' Daftar Menu dan Harga  ':<59}|")
         print("-" * 61)
@@ -29,7 +31,7 @@ if member == 'punya':
         print(f"| Kinderjoy     : {hargaKinderjoy:<42}|")
         print("-" * 61)
 
-        menu = input('Mau Membeli Menu Apa? (silverQueen/dairyMilk/kinderjoy) :')
+        menu = input('Mau Membeli Menu Apa? (silverqueen/dairymilk/kinderjoy) :')
 
         if menu == 'silverqueen':
             harga = hargaSilverQueen
@@ -50,9 +52,11 @@ if member == 'punya':
         print(f"| Diskon (15%)         : Rp {diskon:<32}|")
         print(f"| Harga setelah diskon : Rp {hargaSetelahDiskon:<32}|")
         print("-" * 61)
+    else:
+        print('\n--- MOHON MAAF ANDA TIDAK DAPAT LOGIN MEMBER ---')
 
 else:
-    print('\n=== Selamat Datang Di Toko Guro ===')
+    print('\n=== Selamat Datang Di Toko Guro Selamat Berbelanja ===')
     print("-" * 61)
     print(f"|{' Daftar Menu dan Harga  ':<59}|")
     print("-" * 61)
@@ -61,7 +65,7 @@ else:
     print(f"| Kinderjoy     : {hargaKinderjoy:<42}|")
     print("-" * 61)
 
-    menu = input('Mau Membeli Menu Apa? (silverQueen/dairyMilk/kinderjoy) :')
+    menu = input('Mau Membeli Menu Apa? (silverqueen/dairymilk/kinderjoy) :')
     username = input('Mau Atas Nama Siapa Pesanannya? : ')
     
     if menu == 'silverqueen':
@@ -78,6 +82,7 @@ else:
     print(f"| Menu                  : {menu:<34}|")
     print(f"| Total                 : Rp {harga:<31}|")
     print("-" * 61)
+
 
 
 
