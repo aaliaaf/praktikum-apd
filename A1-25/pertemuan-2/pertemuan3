@@ -52,4 +52,3 @@ menu = int(input("masukkan menu :"))
 
 if menu == 1:
     print('menghitung volume kubus')
-    
