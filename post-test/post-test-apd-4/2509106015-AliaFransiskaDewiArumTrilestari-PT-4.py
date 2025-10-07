@@ -83,34 +83,34 @@ while belilagi == 'yes':
             if beli == 'yes':
                 
                 while menu != 'checkout':
+                    print("-" * 61)
+                    print(f"|{' Daftar Menu dan Harga  ':<59}|")
+                    print("-" * 61)
+                    print(f"| SilverQueen   : {hargaSilverQueen:<42}|")
+                    print(f"| DairyMilk     : {hargaDairyMilk:<42}|")
+                    print(f"| Kinderjoy     : {hargaKinderjoy:<42}|")
+                    print("-" * 61)
                     menu = input('Mau Membeli Menu Apa Lagi? (silverqueen/dairymilk/kinderjoy/checkout) :')
                     if menu == 'silverqueen':
                         harga = hargaSilverQueen
                         total += harga
-                        
                         keranjang_checkout += f", {menu}"
                         print(f'{menu} sudah masuk kerangjang')
                         print(f'Total sementara: Rp{total}')
-
                     elif menu == 'dairymilk':
                         harga = hargaDairyMilk
                         total += harga
-
                         keranjang_checkout += f", {menu}"
                         print(f'{menu} sudah masuk kerangjang')
                         print(f'Total sementara: Rp{total}')
-                        
                     elif menu == 'kinderjoy':
-                        print()
                         harga = hargaKinderjoy
                         total += harga
-                        
                         keranjang_checkout += f", {menu}"
                         print(f'{menu} sudah masuk kerangjang')
                         print(f'Total sementara: Rp{total}')
-
                     elif menu == 'checkout':
-                        print('/n=== Lagi Checkout ===')
+                        print('\n=== Lagi Checkout ===')
                         break
                     else:
                         print('Silahkan pilih dari daftar menu')
@@ -142,24 +142,78 @@ while belilagi == 'yes':
             print(f"| Kinderjoy     : {hargaKinderjoy:<42}|")
             print("-" * 61)
 
+            total = 0
+            keranjang_checkout = ""
+            menu = ""
+
             menu = input('Mau Membeli Menu Apa? (silverqueen/dairymilk/kinderjoy) :')
             username = input('Mau Atas Nama Siapa Pesanannya? : ')
-            
+
             if menu == 'silverqueen':
                 harga = hargaSilverQueen
+                total += harga
+                keranjang_checkout += f'{menu}'
+                print(f'{menu} sudah masuk kerangjang')
+                print(f'Total sementara: Rp{total}')
             elif menu == 'dairymilk':
                 harga = hargaDairyMilk
+                total += harga
+                keranjang_checkout += f'{menu}'
+                print(f'{menu} sudah masuk kerangjang')
+                print(f'Total sementara: Rp{total}')
             else:
                 harga = hargaKinderjoy
+                total += harga
+                keranjang_checkout += f'{menu}'
+                print(f'{menu} sudah masuk kerangjang')
+                print(f'Total sementara: Rp{total}')
+                
+            beli = input('Apakah ada lagi yang mau dibeli lagi? (yes/no): ')
+            if beli == 'yes':
+                
+                while menu != 'checkout':
+                    print("-" * 61)
+                    print(f"|{' Daftar Menu dan Harga  ':<59}|")
+                    print("-" * 61)
+                    print(f"| SilverQueen   : {hargaSilverQueen:<42}|")
+                    print(f"| DairyMilk     : {hargaDairyMilk:<42}|")
+                    print(f"| Kinderjoy     : {hargaKinderjoy:<42}|")
+                    print("-" * 61)
+                    menu = input('Mau Membeli Menu Apa Lagi? (silverqueen/dairymilk/kinderjoy/checkout) :')
+                    if menu == 'silverqueen':
+                        harga = hargaSilverQueen
+                        total += harga
+                        keranjang_checkout += f", {menu}"
+                        print(f'{menu} sudah masuk kerangjang')
+                        print(f'Total sementara: Rp{total}')
+                    elif menu == 'dairymilk':
+                        harga = hargaDairyMilk
+                        total += harga
+                        keranjang_checkout += f", {menu}"
+                        print(f'{menu} sudah masuk kerangjang')
+                        print(f'Total sementara: Rp{total}')
+                    elif menu == 'kinderjoy':
+                        harga = hargaKinderjoy
+                        total += harga
+                        
+                        keranjang_checkout += f", {menu}"
+                        print(f'{menu} sudah masuk kerangjang')
+                        print(f'Total sementara: Rp{total}')
+                    elif menu == 'checkout':
+                        print('\n=== Lagi Checkout ===')
+                        break
+                    else:
+                        print('Silahkan pilih dari daftar menu')
+            else:
+                print('Silahkan langsung ke kasir')
 
             print("-" * 61)
             print(f"|{'Struk Belanja Toko Guro':^59}|")
             print("-" * 61)
             print(f"| Atas Nama             : {username:<34}|")
-            print(f"| Menu                  : {menu:<34}|")
-            print(f"| Total                 : Rp {harga:<31}|")
+            print(f"| Menu                  : {keranjang_checkout:<34}|")
+            print(f"| Total keseluruhan     : Rp {total:<31}|")
             print("-" * 61)
-
 
     else:
         print('\n=== Selamat Datang Di Toko Guro Selamat Berbelanja ===')
@@ -171,22 +225,78 @@ while belilagi == 'yes':
         print(f"| Kinderjoy     : {hargaKinderjoy:<42}|")
         print("-" * 61)
 
+        total = 0
+        keranjang_checkout = ""
+        menu = ""
+
         menu = input('Mau Membeli Menu Apa? (silverqueen/dairymilk/kinderjoy) :')
         username = input('Mau Atas Nama Siapa Pesanannya? : ')
-        
+
         if menu == 'silverqueen':
-            harga = hargaSilverQueen
+                harga = hargaSilverQueen
+                total += harga
+                keranjang_checkout += f'{menu}'
+                print(f'{menu} sudah masuk kerangjang')
+                print(f'Total sementara: Rp{total}')
         elif menu == 'dairymilk':
-            harga = hargaDairyMilk
+                harga = hargaDairyMilk
+                total += harga
+                keranjang_checkout += f'{menu}'
+                print(f'{menu} sudah masuk kerangjang')
+                print(f'Total sementara: Rp{total}')   
         else:
-            harga = hargaKinderjoy
+                harga = hargaKinderjoy
+                total += harga
+                keranjang_checkout += f'{menu}'
+                print(f'{menu} sudah masuk kerangjang')
+                print(f'Total sementara: Rp{total}')
+
+        beli = input('Apakah ada lagi yang mau dibeli lagi? (yes/no): ')
+        if beli == 'yes':
+                
+                while menu != 'checkout':
+                    print("-" * 61)
+                    print(f"|{' Daftar Menu dan Harga  ':<59}|")
+                    print("-" * 61)
+                    print(f"| SilverQueen   : {hargaSilverQueen:<42}|")
+                    print(f"| DairyMilk     : {hargaDairyMilk:<42}|")
+                    print(f"| Kinderjoy     : {hargaKinderjoy:<42}|")
+                    print("-" * 61)
+                    menu = input('Mau Membeli Menu Apa Lagi? (silverqueen/dairymilk/kinderjoy/checkout) :')
+                    if menu == 'silverqueen':
+                        harga = hargaSilverQueen
+                        total += harga
+                        
+                        keranjang_checkout += f", {menu}"
+                        print(f'{menu} sudah masuk kerangjang')
+                        print(f'Total sementara: Rp{total}')
+                    elif menu == 'dairymilk':
+                        harga = hargaDairyMilk
+                        total += harga
+                        keranjang_checkout += f", {menu}"
+                        print(f'{menu} sudah masuk kerangjang')
+                        print(f'Total sementara: Rp{total}')
+                    elif menu == 'kinderjoy':
+                        harga = hargaKinderjoy
+                        total += harga
+                        
+                        keranjang_checkout += f", {menu}"
+                        print(f'{menu} sudah masuk kerangjang')
+                        print(f'Total sementara: Rp{total}')
+                    elif menu == 'checkout':
+                        print('\n=== Lagi Checkout ===')
+                        break
+                    else:
+                        print('Silahkan pilih dari daftar menu')
+        else:
+                print('Silahkan langsung ke kasir')
 
         print("-" * 61)
         print(f"|{'Struk Belanja Toko Guro':^59}|")
         print("-" * 61)
         print(f"| Atas Nama             : {username:<34}|")
-        print(f"| Menu                  : {menu:<34}|")
-        print(f"| Total                 : Rp {harga:<31}|")
+        print(f"| Menu                  : {keranjang_checkout:<34}|")
+        print(f"| Total keseluruhan     : Rp {total:<31}|")
         print("-" * 61)
 
     belilagi = input('Apakah mau membeli sesuatu lagi? (yes/no): ')
