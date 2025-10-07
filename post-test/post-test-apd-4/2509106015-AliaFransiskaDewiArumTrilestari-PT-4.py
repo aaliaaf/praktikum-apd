@@ -266,7 +266,6 @@ while belilagi == 'yes':
                     if menu == 'silverqueen':
                         harga = hargaSilverQueen
                         total += harga
-                        
                         keranjang_checkout += f", {menu}"
                         print(f'{menu} sudah masuk kerangjang')
                         print(f'Total sementara: Rp{total}')
