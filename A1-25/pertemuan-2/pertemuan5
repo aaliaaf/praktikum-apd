@@ -1,0 +1,70 @@
+# praktikum = ["mahasiswa", 20, True, 45.10, "APD", 25, 55]
+# inputNilai = input("matkul :")
+# praktikum.append(inputNilai)
+# praktikum.insert(2, "kalkulus")
+# praktikum[2] = "jarkom"
+
+# del praktikum[2]
+# buang = praktikum.pop()
+# print(buang)
+# pop dan delete pakai indeks
+
+# praktikum.remove('APD')
+# menghapus nilai tertntu
+
+# slicing list
+# praktikum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(praktikum[0:10:2])
+# # 0=start
+# # 10=stop
+# # 2=step atau loncat angka
+# # output [1, 3, 5, 7, 9]
+# print(praktikum[2:10:2])
+# # output [3, 5, 7, 9]
+# print(praktikum[1:10])
+
+# List
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# # menggabungkan kedua list dengan operator (+)
+# c = a + b
+# print(c)
+
+# list mahasiswa
+# mahasiswa = [["Daffa", "Dante", "Santoso"], ["Pernanda", "Triya", "Ahnaf"]]
+# # perulangan for untuk mendapatkan semua elemen
+# for i in mahasiswa:
+#     for j in i :
+#         print(j)
+# # [0][2]
+# 0= i j=2
+# i dan j bebas mau isi apa saja
+# i yg kuning perulangan siku pertama, j pink perulangan siku 2
+# i akan cetak indeks 0 [0,1,2]
+# j akan cetak indeks 1 [0,1,2]
+
+# OUTPUT
+# Daffa
+# Dante
+# Santoso
+# Pernanda
+# Triya
+# Ahnaf
+
+# matkul = ('apd', 'kalukukus') 
+# # tuple lebih dari 1 kalau 1 aja dibaca str
+# for i in matkul:
+#     print(i)
+# tuple tdk bisa diubah
+
+# for i in praktikum:
+#     print(i)
+
+tugas = ('rangkuman', 'arduino','scrapping', 'matriks', 'visualisasi')
+# beri variabel setiap values
+(PTI, orsikom, basisdata, *manipulasidata) = tugas
+# print(PTI)
+# print(orsikom)
+# print(basisdata)
+print(manipulasidata)
+# *untuk menampung sisa
