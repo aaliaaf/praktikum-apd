@@ -21,6 +21,7 @@ while True:
 
     menu = input("Pilih menu (1-3): ")
 
+    os.system("cls" if os.name == "nt" else "clear")
     if menu == "1":
         print("=== LOGIN ADMIN ===")
         username = input("Masukkan Username: ").strip()
@@ -32,7 +33,7 @@ while True:
                 akses = up[2]
                 break
         if akses == "":
-            print("Username atau password salah")
+            print("Username atau password salah silahkan coba lagi")
         else:
             print(f"Login berhasil sebagai {akses}")
 
@@ -49,6 +50,7 @@ while True:
 
                     # CREATE
                     if pilihan == "1":
+                            os.system("cls" if os.name == "nt" else "clear")
                             print("\n=== TAMBAH ALAT BARU ===")
                             nama_alat_baru = input("Masukkan nama alat: ")
                             merek_alat_baru = input("Masukkan merek alat: ")
@@ -62,6 +64,7 @@ while True:
                             
                     # READ
                     elif pilihan == "2":
+                            os.system("cls" if os.name == "nt" else "clear")
                             table = PrettyTable()
                             table.field_names = ["Nama", "Merek", "Tahun", "Status"]
 
@@ -71,6 +74,7 @@ while True:
 
                     # UPDATE
                     elif pilihan == "3":
+                            os.system("cls" if os.name == "nt" else "clear")
                             print("\n=== UBAH STATUS ALAT ===")
                             if alat_berat == []:
                                 print("Belum ada alat yang bisa diubah.")
@@ -89,6 +93,7 @@ while True:
 
                     # DELETE
                     elif pilihan == "4":
+                            os.system("cls" if os.name == "nt" else "clear")
                             print("\n=== HAPUS ALAT BERAT ===")
 
                             if alat_berat == []:
@@ -116,6 +121,7 @@ while True:
                     else:
                             print("Gunakan Urutan Nomor Pada Menu Yang Sudah Disediakan")
     elif menu == "2":
+        os.system("cls" if os.name == "nt" else "clear")
         print("=== MEMBUAT AKUN BARU ===")
         username = input("Masukkan username baru: ").strip()
         password = input("Masukkan password baru: ").strip()
@@ -136,25 +142,18 @@ while True:
             pilihan = input("Masukkan Nomor Pada Menu (1-2): ")
 
             if pilihan == "1":
+                os.system("cls" if os.name == "nt" else "clear")
                 table = PrettyTable()
                 table.field_names = ["Nama", "Merek", "Tahun", "Status"]
 
                 for i in range(len(alat_berat)):
                     table.add_row([alat_berat[i], merek[i], tahun[i], status_alat[i]])
                 print(table)
-                # print("-" * 90)
-                # print(f"| {'Nama Alat':<20} | {'Tahun':<10} | {'Merek':<20} | {'Status':<27} |")
-                # print("-" * 90)
-
-                # for i in range(len(alat_berat)):
-                #     print(f"| {alat_berat[i]:<20} | {tahun[i]:<10} | {merek[i]:<20} | {status_alat[i]:<27} |")
-
-                # print("-" * 90)
-
             elif pilihan == "2":
                 break
             else:
                 print("Gunakan Urutan Nomor Pada Menu Yang Sudah Disediakan")
+                
     elif menu == "3":
             os.system("cls" if os.name == "nt" else "clear")
             print("Program berhenti")
