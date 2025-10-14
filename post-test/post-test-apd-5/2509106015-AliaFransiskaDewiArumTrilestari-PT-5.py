@@ -87,9 +87,9 @@ while True:
                                 ubah_status = int(input("Masukkan nomor alat yang ingin diubah: "))
                                 status_baru = input("Masukkan status baru: ")
 
-                                index = ubah_status - 1
-                                status_alat[index] = status_baru
-                                print(f"Status alat '{alat_berat[index]}' berhasil diubah")
+                                indeks = ubah_status - 1
+                                status_alat[indeks] = status_baru
+                                print(f"Status alat '{alat_berat[indeks]}' berhasil diubah")
 
                     # DELETE
                     elif pilihan == "4":
@@ -106,12 +106,12 @@ while True:
                                 hapus = int(input("Masukkan nomor alat yang ingin dihapus: "))
                                 status_dihapus = input("Kenapa ingin menghapus alat ini (Rusak/Ingin Diperbaiki): ")
 
-                                index = hapus - 1 
-                                dihapus = alat_berat[index]
-                                del alat_berat[index]
-                                del merek[index]
-                                del tahun[index]
-                                del status_alat[index]
+                                indeks = hapus - 1 
+                                dihapus = alat_berat[indeks]
+                                del alat_berat[indeks]
+                                del merek[indeks]
+                                del tahun[indeks]
+                                del status_alat[indeks]
 
                                 print(f"Alat '{dihapus}' berhasil dihapus!")
                                 print(f"Karena alat tersebuh {status_dihapus}")
