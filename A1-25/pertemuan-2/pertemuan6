@@ -104,3 +104,5 @@ data = {
 print(data)
 del data["Nama"]
 print(data)
+
+#strip() = membersihkan spasi atau karakter kosong di awal dan akhir string
