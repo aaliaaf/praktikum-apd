@@ -7,7 +7,6 @@ alat_berat = {
     "Compactor": {"merek": "Bomag", "tahun": 2005, "status": "Dalam Perbaikan"}
 }
 
-
 def tampilkan_alat():
     clear()
     print("=== DAFTAR ALAT BERAT ===")

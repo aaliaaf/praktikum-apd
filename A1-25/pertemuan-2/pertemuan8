@@ -11,22 +11,22 @@
 # print(answer) # Output dalam bentuk Dictionary {'size': 'Large'}
 # print(answer['size']) # Ambil value dari key 'size' (Large)
 
-import inquirer
+# import inquirer
 
-# Buat pertanyaan dengan pilihan yang bisa dipilih pakai panah
-pertanyaan = [
-    inquirer.List(
-        'bahasa',
-        message="Pilih bahasa pemrograman favoritmu:",
-        choices=['Python', 'JavaScript', 'Java', 'C++', 'Go']
-    )
-]
+# # Buat pertanyaan dengan pilihan yang bisa dipilih pakai panah
+# pertanyaan = [
+#     inquirer.List(
+#         'bahasa',
+#         message="Pilih bahasa pemrograman favoritmu:",
+#         choices=['Python', 'JavaScript', 'Java', 'C++', 'Go']
+#     )
+# ]
 
-# Jalankan pertanyaan
-jawaban = inquirer.prompt(pertanyaan)
+# # Jalankan pertanyaan
+# jawaban = inquirer.prompt(pertanyaan)
 
-# Tampilkan hasil
-print(f"\nKamu memilih: {jawaban['bahasa']} ✨")
+# # Tampilkan hasil
+# print(f"\nKamu memilih: {jawaban['bahasa']} ✨")
 
 # from prettytable import PrettyTable
 # table = PrettyTable()
