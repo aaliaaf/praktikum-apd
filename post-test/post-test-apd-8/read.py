@@ -1,11 +1,13 @@
-from clear import clear
+from bersih import clear
 from prettytable import PrettyTable
+
 
 alat_berat = {
     "Excavator": {"merek": "Hitachi", "tahun": 2010, "status": "Siap Pakai"},
     "Bulldozer": {"merek": "Caterpillar", "tahun": 2020, "status": "Rusak"},
     "Compactor": {"merek": "Bomag", "tahun": 2005, "status": "Dalam Perbaikan"}
 }
+
 
 def tampilkan_alat():
     clear()
