@@ -35,15 +35,15 @@ while True:
                 print("4. Hapus alat")
                 print("5. Keluar")
 
-                pilihan = input( "Pilih menu (1-5): ")
+                pilihan = input("Pilih menu (1-5): ")
                 if pilihan == "1":
                     tambah_alat()
                 elif pilihan == "2":
                     tampilkan_alat()
                 elif pilihan == "3":
                     clear()
-                    alat = input( "Masukkan nama alat yang mau diubah: ").strip()
-                    status_baru = input( "Masukkan status baru (Siap Pakai/Rusak/Dalam Perbaikan) : ").strip()
+                    alat = input("Masukkan nama alat yang mau diubah: ").strip()
+                    status_baru = input("Masukkan status baru (Siap Pakai/Rusak/Dalam Perbaikan) : ").strip()
                     ubah_status(alat, status_baru)
                 elif pilihan == "4":
                     hapus_alat()
@@ -57,10 +57,10 @@ while True:
             while True:
                 clear()
                 print(f"=== MENU USER ({login_user}) ===")
-                print(menu + "1. Lihat alat berat")
-                print(menu + "2. Keluar")
+                print("1. Lihat alat berat")
+                print("2. Keluar")
 
-                pilihan = input( "Pilih menu (1-2): ")
+                pilihan = input("Pilih menu (1-2): ")
 
                 if pilihan == "1":
                     tampilkan_alat()
@@ -73,8 +73,8 @@ while True:
     elif menu == "2":
         clear()
         print("=== REGISTER AKUN BARU ===")
-        username = input( "Masukkan username baru: ").strip()
-        password = input( "Masukkan password baru: ").strip()
+        username = input("Masukkan username baru: ").strip()
+        password = input("Masukkan password baru: ").strip()
 
         if username in pengguna:
             print("Username sudah terdaftar!")
