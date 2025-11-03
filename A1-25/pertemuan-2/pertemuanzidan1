@@ -1,0 +1,26 @@
+umur = 12
+#tipe data int
+
+suku = "jawa", "bNjar"
+#tipe data str
+
+nama = 'amat' #str
+value = 3.14 #float
+
+phi = 3.14 #float
+
+sigma = True #bool
+
+teman = "alia" #str
+
+hasil = 30+30 #int
+
+hasil = 30.1 + 30.2 #float
+
+umur = 10
+if umur <10:
+    print("waduh")
+elif umur >=10 and umur <=17:
+    print("anak")
+else:
+    print("dewasa")

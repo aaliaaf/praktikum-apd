@@ -1,20 +1,21 @@
 from clear import clear
 from read import alat_berat
+from warna import judul, berhasil, gagal, enter, m, gumi
 
 def tambah_alat():
     try:
         clear()
-        print("=== TAMBAH ALAT BARU ===")
-        nama = input("Masukkan nama alat: ").strip()
+        print(judul + "=== TAMBAH ALAT BARU ===")
+        nama = input(gumi + "Masukkan nama alat: ").strip()
         if nama in alat_berat:
-            print("Alat sudah ada!")
+            print(gagal + "Alat sudah ada!")
             return
-        merek = input("Masukkan merek: ").strip()
-        tahun = int(input("Masukkan tahun alat: "))
-        status = input("Masukkan status (Siap Pakai/Rusak/Dalam Perbaikan): ").strip()
+        merek = input(gumi + "Masukkan merek: ").strip()
+        tahun = int(input(gumi + "Masukkan tahun alat: "))
+        status = input(gumi + "Masukkan status (Siap Pakai/Rusak/Dalam Perbaikan): ").strip()
         alat_berat[nama] = {"merek": merek, "tahun": tahun, "status": status}
-        print(f"Alat '{nama}' berhasil ditambahkan.")
+        print(berhasil + f"Alat '{nama}' berhasil ditambahkan.")
     except ValueError:
-        print("Tahun harus berupa angka!")
+        print(gagal + "Tahun harus berupa angka!")
     except Exception as e:
-        print(f"Terjadi kesalahan: {e}")
+        print(gagal + f"Terjadi kesalahan: {e}")
